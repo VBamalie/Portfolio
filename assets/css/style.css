@@ -2,7 +2,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
-
+/*color palette
+possibly add margin specifications?*/
 :root{
     --palesilver: #bdd4cb;
     --ming: #3d454b;
@@ -10,10 +11,24 @@
     --baby-pink: #d8bbc3;
     
 }
-
+/*My name and the side bars*/
 h1{
     color: var(--ming);
     font-size:xx-large;
+}
+
+p{
+    color: var(--ming);
+    font-size: small;
+    margin-bottom: 3vh;
+    line-height: 1.5;
+    line-break:loose;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--baby-pink);
 }
 
 body{
@@ -39,8 +54,7 @@ header{
 }
 
 header h1{
-    position: relative;
-    top:3vh;
+
 
 }
 
@@ -49,11 +63,12 @@ ul{
     margin: 6vh;
 
 }
+
+
 header li{
     margin: 0 4vh;
     color: var(--baby-pink);
     border-bottom: var(--baby-pink) solid;
-
 }
 
 .hero {
@@ -71,12 +86,26 @@ section{
     flex-direction: row;
 }
 
-section h1{
-    padding:2vh 5vh 20vh 25vh ;
+section h1, main h1{
+    padding-left: 25vh ;
+    padding-right: 3vh;
+    padding-bottom: 15%;
     margin-bottom: 10vh;
     border-right: solid var(--ming)
 }
 
-section p{
-    margin: 2vh 0vh 3vh 5vh;
+section div{
+    margin: 2vh 5vh 3vh 5vh;
 }
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+main h1{
+
+}
+
+/*Change the media query*/
