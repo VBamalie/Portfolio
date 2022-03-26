@@ -55,7 +55,6 @@ header{
 
 header h1{
 
-
 }
 
 ul{
@@ -100,12 +99,32 @@ section div{
 
 
 main{
-    display: flex;
-    flex-direction: row;
 }
 
 main h1{
+    display: inline;
 
 }
+/*id project-1's borders are going wide*/
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 24%;
+}
+
+
+#project-1 img{
+    margin: 1%;
+    flex: 1.189;
+    max-width: 25%;
+    
+}
+
+#project-2 img, #project-3 img, #project-4 img, #project-5 img{
+    margin: 1%;
+    flex:1.189;
+    max-width: 24%;
+
+    }
 
 /*Change the media query*/
