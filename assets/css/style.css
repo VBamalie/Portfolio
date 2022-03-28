@@ -75,7 +75,7 @@ header li:hover{
     border-radius: 2px;
 }
 
-.hero {
+.top-picture{
     height: 50vh;
     width: 100%;
     margin-bottom: 25px;
@@ -131,22 +131,16 @@ main h1{
 .projects{
     display:flex;
     margin: 0 4% 4% 4%;
+    flex-flow: wrap;
+    justify-content: space-around;
 }
-#project-2, #project-3{
+#project-2, #project-3, #project-4, #project-5{
     background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
     background-size: cover;
     background-position: center;
-    width: 50vh;
-    height: 50vh;
+    width: 300px;
+    height: 300px;
     margin: 5px;
-}
-#project-4, #project-5{
-    background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
-    background-size: cover;
-    background-position: center;
-    width: 50vh;
-    height: 50vh;
-    margin: 5px
 }
     footer{
         display: flex;
