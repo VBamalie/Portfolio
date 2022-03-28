@@ -5,20 +5,20 @@
 /*color palette
 possibly add margin specifications?*/
 :root{
-    --palesilver: #bdd4cb;
-    --ming: #3d454b;
-    --slate-gray: #6db9c7;
-    --baby-pink: #d8bbc3;
+    --page-color: #bdd4cb;
+    --dark: #3d454b;
+    --mid: #6db9c7;
+    --light: #d8bbc3;
     
 }
 /*My name and the side bars*/
 h1{
-    color: var(--ming);
+    color: var(--dark);
     font-size:xx-large;
 }
 
 p{
-    color: var(--ming);
+    color: var(--dark);
     font-size: small;
     margin-bottom: 3vh;
     line-height: 1.5;
@@ -28,11 +28,11 @@ p{
 
 a{
     text-decoration: none;
-    color: var(--baby-pink);
+    color: var(--light);
 }
 
 body{
-    background-color: var(--palesilver);
+    background-color: var(--page-color);
 }
 
 
@@ -43,19 +43,17 @@ header{
     align-items: center;
     width: 100%;
     height: 20vh;
-    background-color: var(--ming);
+    background-color: var(--dark);
 
 }
 
 .name-box{
     padding-left: 2%;
     height: 10vh;
-    background-color: var(--baby-pink);
+    background-color: var(--light);
+    border-radius: 0 4px 4px 0;
 }
 
-header h1{
-
-}
 
 ul{
     display: flex;
@@ -65,19 +63,26 @@ ul{
 
 
 header li{
-    margin: 0 4vh;
-    color: var(--baby-pink);
-    border-bottom: var(--baby-pink) solid;
+    padding: 2vh 1vh;
+    margin: 0 3vh;
+    color: var(--light);
+    border-bottom: var(--light) solid;
+
+}
+
+header li:hover{
+    background-color: var(--mid) ;
+    border-radius: 2px;
 }
 
 .hero {
     height: 50vh;
     width: 100%;
     margin-bottom: 25px;
-    background-image: src="assets/images/placeholder-1-e1533569576673-960x960 copy.png" alt="placeholder";
+    background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
     background-size: cover;
     background-position: center;
-    border-bottom: var(--slate-gray) dotted;
+    border-bottom: var(--mid) dotted;
 }
 
 section{
@@ -90,7 +95,7 @@ section h1, main h1{
     padding-right: 3vh;
     padding-bottom: 15%;
     margin-bottom: 10vh;
-    border-right: solid var(--ming)
+    border-right: solid var(--dark)
 }
 
 section div{
@@ -108,23 +113,35 @@ main h1{
 /*id project-1's borders are going wide*/
 .projects{
     display: flex;
-    flex-flow: row wrap;
     margin-left: 24%;
+    max-width: 25%;
 }
 
 
 #project-1 img{
     margin: 1%;
     flex: 1.189;
-    max-width: 25%;
+    width:100vh;
+    height: 100vh;
+    flex: wrap row;
+
     
 }
 
 #project-2 img, #project-3 img, #project-4 img, #project-5 img{
     margin: 1%;
     flex:1.189;
-    max-width: 24%;
+    width:50vh;
+    height: 50vh;
+    flex: wrap row;
+
 
     }
 
+    #project-1:hover, #project-2:hover, #project-3:hover, #project-4:hover, #project-5:hover{
+        background-color: var(--mid);
+    }
+    footer{
+        display: flex;
+    }
 /*Change the media query*/
