@@ -88,9 +88,10 @@ header li:hover{
 section{
     display: flex;
     flex-direction: row;
+    margin-bottom: 20vh;
 }
 
-section h1, main h1{
+section h1 {
     padding-left: 25vh ;
     padding-right: 3vh;
     padding-bottom: 15%;
@@ -102,45 +103,51 @@ section div{
     margin: 2vh 5vh 3vh 5vh;
 }
 
-
 main{
+    margin: 0 20vh;
+    border: #3d454b solid;
+    border-radius: 10px;
+    min-height: 200vh;
+    margin-bottom: 15vh;
 }
 
 main h1{
-    display: inline;
+    display: block;
+    margin-left: 5vh;
+    position: relative;
+    bottom: 50px;
+    }
 
+#project-1{
+        background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        height: 100vh;
+        margin: 0 4% 4% 4%;
+        display: block;
+        
 }
-/*id project-1's borders are going wide*/
 .projects{
-    display: flex;
-    margin-left: 24%;
-    max-width: 25%;
+    display:flex;
+    margin: 0 4% 4% 4%;
 }
-
-
-#project-1 img{
-    margin: 1%;
-    flex: 1.189;
-    width:100vh;
-    height: 100vh;
-    flex: wrap row;
-
-    
-}
-
-#project-2 img, #project-3 img, #project-4 img, #project-5 img{
-    margin: 1%;
-    flex:1.189;
-    width:50vh;
+#project-2, #project-3{
+    background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 50vh;
     height: 50vh;
-    flex: wrap row;
-
-
-    }
-
-    #project-1:hover, #project-2:hover, #project-3:hover, #project-4:hover, #project-5:hover{
-        background-color: var(--mid);
-    }
+    margin: 5px;
+}
+#project-4, #project-5{
+    background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 50vh;
+    height: 50vh;
+    margin: 5px
+}
     footer{
         display: flex;
     }
