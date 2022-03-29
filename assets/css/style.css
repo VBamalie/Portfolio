@@ -2,8 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
-/*color palette
-possibly add margin specifications?*/
+/*color palette*/
 :root{
     --page-color: #bdd4cb;
     --dark: #3d454b;
@@ -11,12 +10,12 @@ possibly add margin specifications?*/
     --light: #d8bbc3;
     
 }
-/*My name and the side bars*/
+/*My name, about me, work, and contact me*/
 h1{
     color: var(--dark);
     font-size:xx-large;
 }
-
+/*The main body of text*/
 p{
     color: var(--dark);
     font-size: small;
@@ -25,7 +24,7 @@ p{
     line-break:loose;
     
 }
-
+/*Takes out the text decoration so I can add my own*/
 a{
     text-decoration: none;
     color: var(--light);
@@ -36,7 +35,8 @@ body{
 }
 
 
-
+/*A purple color that spans the entire top and bottom of the page
+Name and Contact me on the left while links are listed on the right*/
 header, footer{
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@ header, footer{
 
 }
 
-
+/*A pink box that holds the Name and Contact me in the header and footer*/
 .name-box{
     padding-left: 2%;
     height: 10vh;
@@ -55,7 +55,7 @@ header, footer{
     border-radius: 0 4px 4px 0;
 }
 
-
+/*links in the header and footer*/
 ul{
     display: flex;
     margin: 6vh;
@@ -80,12 +80,12 @@ ul{
     height: 50vh;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
+    background-image: url("../images/kitten-banner.jpeg");
     background-size: cover;
     background-position: center;
     border-bottom: var(--mid) dotted;
 }
-
+/*About me Section*/
 section{
     display: flex;
     flex-direction: row;
@@ -103,7 +103,7 @@ section h1 {
 section div{
     margin: 2vh 5vh 3vh 5vh;
 }
-
+/*my works*/
 main{
     margin: 0 20vh;
     border: #3d454b solid;
@@ -118,17 +118,19 @@ main h1{
     position: relative;
     bottom: 50px;
     }
-
+/*The biggest picture of my Works. It stands alone on its own line*/
 #project-1{
-        background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
+        background-image: url("../images/kitty-cat.jpeg");
         background-size: cover;
         background-position: center;
         width: 90%;
         height: 100vh;
         margin: 0 4% 4% 4%;
         display: block;
+        border: var(--dark) solid;
         
 }
+/*The container for the smaller projects*/
 .projects{
     display:flex;
     margin: 0 10px, 10px, 10px;
@@ -136,33 +138,51 @@ main h1{
     justify-content: space-evenly;
     align-items: center;
 }
-/* remember to put the background style in*/
+/* remember to put the background style in the picture is only in project-2*/
 #project-2, #project-3, #project-4, #project-5{
-    background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
+    background-image: url("../images/cute-kitty.jpeg");
     background-size: cover;
     background-position: center;
     width: 300px;
     height: 300px;
     margin: 50px;
     flex-grow: 1;
+    border: var(--dark) solid;
 }
+#project-1:hover, #project-2:hover, #project-3:hover, #project-4:hover, #project-5:hover{
+    border: var(--mid) solid 15px;
+}
+/*the rest of the pictures are here*/
 #project-3{
-    background-image: url("../images/istockphoto-1147544807-612x612.jpeg")
+    background-image: url("../images/kitty-cop.jpeg")
 }
 #project-4{
-    background-image: url("../images/istockphoto-1147544807-612x612.jpeg")
+    background-image: url("../images/multiple-kitties.png")
 }
 #project-5{
-    background-image: url("../images/istockphoto-1147544807-612x612.jpeg")
+    background-image: url("../images/kitten-banner.jpeg")
 }
+/*Changes the styling so everything is more of in a row at smaller screen aspects*/
 @media only screen and (max-width: 1200px){
+    main{
+        margin: 0 5vh;
+    }
+   header h1{
+        font-size: large;
+    }
     #project-2, #project-3, #project-4, #project-5{
-        background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
-        background-size: cover;
-        background-position: center;
         width: 90%;
         height: 50vh;
         margin: 0 4% 4% 4%;
         display: block;
     }
+}
+/*The top and bottom heading ten*/
+@media only screen and (max-width: 500px){
+    section h1{
+        padding-left: 5vh ;
+        padding-right: 3vh;
+        padding-bottom: 15%;
+    }
+    
 }
