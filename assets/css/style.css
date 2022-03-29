@@ -37,7 +37,7 @@ body{
 
 
 
-header{
+header, footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +46,7 @@ header{
     background-color: var(--dark);
 
 }
+
 
 .name-box{
     padding-left: 2%;
@@ -62,7 +63,7 @@ ul{
 }
 
 
-header li{
+ li{
     padding: 2vh 1vh;
     margin: 0 3vh;
     color: var(--light);
@@ -70,7 +71,7 @@ header li{
 
 }
 
-header li:hover{
+ li:hover{
     background-color: var(--mid) ;
     border-radius: 2px;
 }
@@ -130,19 +131,38 @@ main h1{
 }
 .projects{
     display:flex;
-    margin: 0 4% 4% 4%;
+    margin: 0 10px, 10px, 10px;
     flex-flow: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
+/* remember to put the background style in*/
 #project-2, #project-3, #project-4, #project-5{
     background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
     background-size: cover;
     background-position: center;
     width: 300px;
     height: 300px;
-    margin: 5px;
+    margin: 50px;
+    flex-grow: 1;
 }
-    footer{
-        display: flex;
+#project-3{
+    background-image: url("../images/istockphoto-1147544807-612x612.jpeg")
+}
+#project-4{
+    background-image: url("../images/istockphoto-1147544807-612x612.jpeg")
+}
+#project-5{
+    background-image: url("../images/istockphoto-1147544807-612x612.jpeg")
+}
+@media only screen and (max-width: 1200px){
+    #project-2, #project-3, #project-4, #project-5{
+        background-image: url("../images/istockphoto-1147544807-612x612.jpeg");
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        height: 50vh;
+        margin: 0 4% 4% 4%;
+        display: block;
     }
-/*Change the media query*/
+}
