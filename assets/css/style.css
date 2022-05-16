@@ -124,16 +124,16 @@ main h1{
     bottom: 50px;
     }
 /*The biggest picture of my Works. It stands alone on its own line*/
+
+
 #project-1{
-        background-image: url("../images/kitty-cat.jpeg");
+        background-image: url("../images/screencapture-canro2b-github-io-gitGud-2022-04-15-09_42_02-edit.png");
         background-size: cover;
         background-position: center;
-        width: 90%;
         height: 100vh;
-        margin: 0 4% 4% 4%;
-        margin: auto;
         display: block;
         border: var(--dark) solid;
+        margin-left: 8%;
         
 }
 /*The container for the smaller projects*/
@@ -146,7 +146,7 @@ main h1{
 }
 /* remember to put the background style in the picture is only in project-2*/
 #project-2, #project-3, #project-4, #project-5{
-    background-image: url("../images/cute-kitty.jpeg");
+    background-image: url("../images//Screen\ Shot\ 2022-05-16\ at\ 10.41.46\ AM.png");
     background-size: cover;
     background-position: center;
     width: 300px;
